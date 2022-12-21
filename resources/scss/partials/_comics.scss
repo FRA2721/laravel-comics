@@ -1,0 +1,104 @@
+// jumbotron formatting section
+.jumbotron{
+    height: 333px;
+    border-top: 3px solid grey;
+    border-bottom: 3px solid grey;
+
+    // image formatting section
+    img{
+        width: 100%;
+        height: 100%;
+        object-position: top;
+        object-fit: cover;
+    }
+    
+    // container section
+    .container{
+        position: relative;  
+
+        .current-serie{
+            position: absolute;
+            left: 0;
+            top: 50%;
+            padding: .5em 1em;
+            color: white;
+            background-color: #0084ff;
+            transform: translateY(-50%);
+        }
+    }
+}
+
+// product formatting section
+.film{
+    background-color: #171717;
+
+    // container section
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: white;
+
+        // list formatting section
+        .film-list{
+            padding: 2em 0;
+            display: flex;
+            flex-wrap: wrap;
+
+            // cards formatting section
+            .card-films{
+                width: calc(100% / 6 - 2em);
+                margin: 1em;
+
+                // image formatting section
+                img{
+                    width: 100%;
+                    height: 80%;
+                    object-fit: cover;
+                    object-position: top;
+                    border: 3px solid grey;
+                    transition-duration: 1s;
+                    cursor: pointer;
+                    
+                    &:hover{
+                        transform: scale(.9);
+                    }
+                }
+
+                // tipography
+                h4{
+                    font-size: .8rem;
+                    padding: 10px 0;
+                    color: #0084ff;
+                }
+
+                // tipography
+                h6{
+                    font-size: .5rem;
+                    color: rgb(162, 162, 162);
+                }
+            }
+        }
+
+        // botton formatting section
+        .btn-more{
+            color: white;
+            background-color: #0084ff;
+            border-style: none;
+            font-size: .8rem;
+            text-align: center;
+            padding: .5em 2em;
+            font-weight: 600;
+            margin-bottom: 2em;
+            transition-duration: 1s;
+            cursor: pointer;
+
+            &:hover{
+                color: #0084ff;
+                background-color: white;
+                transform: scale(1.1);
+            }
+        }
+    }
+}

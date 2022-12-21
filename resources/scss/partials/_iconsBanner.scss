@@ -1,0 +1,38 @@
+// icons banner formatting section
+.icons-banner{
+    color: white;
+    background-color:  #0084ff;
+    border-top: 3px solid grey;
+
+    // container formatting section
+    .container{
+        padding: 1.5em 0;
+
+        // list formatting section
+        ul{
+            display: flex;
+            justify-content: space-around;
+
+            // list items formatting section
+            li{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                // image formatting section
+                img{
+                    width: 33px;
+                }
+
+                // anchor formatting section
+                a{
+                    color: white;
+                    padding: 0 .5em;
+                    font-size: .8rem;
+                    text-decoration: none;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

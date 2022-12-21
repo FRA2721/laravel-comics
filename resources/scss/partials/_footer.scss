@@ -1,0 +1,133 @@
+// footer links general formatting section
+.footer-links{
+    background-image: url("../img/footer-bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-top: 3px solid grey;
+    border-bottom: 3px solid grey;
+
+    // container for footer links
+    .container {
+        display: flex;
+        position: relative;
+        overflow: hidden;
+
+        // links formatting section
+        .navigation-links{
+            width: 50%;
+            display: flex;
+            flex-wrap: wrap;
+            padding: .5em 0;  
+            margin-top: 1.5rem;
+
+            // list
+            ul{
+                width: calc(100% / 4 - 1em);
+                margin: 0 1em;
+
+                // tipography
+                h3{
+                    color: white;
+                    font-size: 1.2rem;
+                }
+
+                // list items
+                li{
+                    margin: .5em 0;
+                    
+                    a{
+                        color: #b6b2b2;
+                        font-size: .8rem;
+                        text-decoration: none;
+
+                        &:hover{
+                            color: #0084ff;
+                        }
+                    }
+                }
+            }
+
+            p{
+                color: white;
+                font-size: .7rem;
+                margin-left: 50px;
+            }
+        }
+
+        // footer logo formatting section 
+        .logo{
+            width: 70%;
+            position: absolute;
+            right: 0;
+            top: 50%;
+            display: flex;
+            justify-content: flex-end;
+            transform: translateY(-50%);
+        }
+    }
+}
+
+// footer social formatting section
+.footer-social{
+    background-color: #222222;
+    border-bottom: 3px solid grey;
+
+    // social container
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 2em 0;
+
+        // button formatting section
+        .button{
+
+            button{
+                padding: .5em;
+                color: white;
+                border: 2.5px solid #0084ff;
+                background-color:  #222222;
+                transition-duration: 1s;
+                cursor: pointer;
+
+                &:hover{
+                    transform: scale(1.1);
+                    color: #0084ff;
+                    border: 2.5px solid white;
+                }
+            }
+        }
+
+        // social links formatting section
+        .social-links{
+            display: flex;
+            align-items: center;
+            border-bottom: 1.5px dashed grey;
+
+            h3{
+                color: #0084ff;
+            }
+
+            img{
+                width: 33px;
+                transition-duration: 1s;
+                cursor: pointer;
+
+                &:hover{
+                    transform: scale(1.1);
+                }
+            }
+
+            ul{
+                list-style: none;
+                display: flex;
+                align-items: center;
+                margin: 0 1em;
+                
+                li{
+                    margin: 0 .5em;
+                }
+            }
+        }
+    }
+}
